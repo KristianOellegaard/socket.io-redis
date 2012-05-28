@@ -17,7 +17,9 @@ Le snipppets
 Python
 ------
 
-```shell pip install redis hiredis```
+```bash
+pip install redis hiredis
+```
 
 ```python
 import redis
