@@ -9,3 +9,20 @@ Contribute
 Bugfixes can be sent as pullrequests or be posted as an issue.
 
 If you know how to send a message to redis pubsub in *any language* feel free to make me a pull request with it included.
+
+
+Le snipppets
+============
+
+Python
+------
+
+```shell pip install redis hiredis```
+
+```python
+import redis
+
+pool = redis.ConnectionPool(host=url.hostname, port=url.port, db=0, password=url.password)
+redis_subscribe = redis.StrictRedis(connection_pool=pool)
+redis_subscribe.publish("your channel/pattern here", "this message is sent to socket.io")
+``` 
