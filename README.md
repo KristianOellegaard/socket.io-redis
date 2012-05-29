@@ -3,6 +3,17 @@ Basic concept
 
 You think socket.io is very cool, but do not want to write your server-side webapplication in .. javascript. Using this very simple snippet, you can push your data into redis from any programming language and socket.io will then push it to the client.
 
+Installation
+============
+
+You will need node.js to run the socket.io server, you can grab it at http://nodejs.org/#download - this should install the node package manager as well "npm".
+
+```bash
+npm install redis@0.7.2
+npm install socket.io@0.9.6
+```
+
+
 Usage
 =====
 
